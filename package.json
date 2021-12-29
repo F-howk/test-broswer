@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "electron": "^16.0.4"
+  },
+  "scripts": {
+    "serve":"electron ."
+  },
+  "name": "e-b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}

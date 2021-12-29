@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        :root{
+            --color:#409eff
+        }
+        .btn{
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 28px;
+            border-radius: 50%;
+            cursor: context-menu;
+            margin-left:10px
+        }
+        .btn:hover{
+            background-color: #ccc;
+        }
+        .nav{
+            user-select: none;
+            line-height: 40px;
+            border-bottom:1px solid #ccc;
+        }
+        .search{
+            margin-left:10px;
+            outline: var(--color);
+            width: calc(100% - 150px);
+            border-radius: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            padding: 6px 20px;
+            box-sizing: border-box;
+            caret-color: #bbb;
+            font-size: 16px;
+            border:2px solid #f7f7f7;
+            font-weight: normal;
+        }
+        .search:focus{
+            border:2px solid var(--color);
+            background-color: #fff;
+        }
+        .frame{
+            height: calc(100vh - 41px);
+            width: 100%;
+            box-sizing: border-box;
+            border: 0;
+        }
+        body{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <span class="btn left">⬅</span><span class="btn right">➡</span><span class="btn refresh">⚪</span><input type="text" class="search">
+    </div>
+    <iframe src="http://www.electronjs.org/zh/docs/latest/tutorial/web-embeds" frameborder="0" class="frame"></iframe>
+    <script src="./render.js"></script>
+</body>
+</html>
